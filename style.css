@@ -3,14 +3,12 @@ html {
   box-sizing: border-box;
   font-size: 1rem;
 }
-
 .bigContainer {
   margin: 12.5rem 9.97rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 h3 {
   text-align: center;
   margin: 0 auto 3rem auto;
@@ -105,7 +103,6 @@ h3 {
   width: 95px !important;
   cursor: pointer;
 }
-
 .fa .fa-star {
   font-size: 15px;
 }
@@ -319,10 +316,12 @@ h3 {
   html {font-size: 1.5rem;}
 }
 
-/* Make ontouch with java! */
 
-/* modif: ipadUI: questions centered
-          ipadPro/1024px/ layoutchange
-          star change color  #ffab41!important --->#3fd100; 
-          percentage calculator more accurate*/
-/* extra: added the video shama */
+
+/* modifications made: 
+          -(min-device-width: 768px) and (max-device-width: 1023px): videos & questions centered: it gives a better UX, the whole this part of the page is already giving very much information to the customers, so it is important to be clear.
+          -(min-device-width: 1024px) and (max-device-width: 1360px): videos layoutchange for the same reason as explained below.
+          -stars color changed as requested #ffab41!important --->#3fd100. :
+               I think this green fits much better to the site, as UZMU is a company selling healthy Supplements, snacks, ect., and a green as the most natural color is perfect fit for the site. 
+               Also is vibrant and catches the attention as much as the yellow did.*/
+/* extra: added the video schema, just to help me visualize the project better */
