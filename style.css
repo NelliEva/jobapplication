@@ -1,0 +1,334 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+*::after,
+::before {
+  box-sizing: border-box;
+  border-width: 0;
+}
+.bigContainer {
+  margin: 12.5rem 9.97rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  padding-top: 0;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 0;
+  width: 100%;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.total {
+  width: 200px;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+}
+.totalRating {
+  display: inline-block !important;
+  margin: 0 !important;
+  clear: both;
+  vertical-align: text-bottom;
+}
+.totalRating_score {
+  font-family: Montserrat, sans-serif;
+  font-size: 37px;
+  line-height: 30px;
+  margin-right: 5px;
+  margin-top: 0;
+}
+.totalRating-stars {
+  white-space: nowrap;
+  line-height: inherit;
+  font-size: normal;
+}
+
+.goldStar {
+  color: #3fd100;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 20px !important;
+  line-height: 1em;
+  text-align: center;
+}
+.goldStar::before {
+  font-size: 26px;
+}
+.totalRating-infobox {
+  vertical-align: text-bottom;
+  margin-top: 21px;
+  margin-bottom: 16px;
+}
+.totalRating_info {
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+#detailRating {
+  width: 278px !important;
+  margin-bottom: 20px !important;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  color: #999;
+  line-height: normal;
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+.ratingBox {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 3px;
+  line-height: 1.6;
+}
+
+.ratingBox_stars {
+  font-size: 12px;
+  width: 95px !important;
+  cursor: pointer;
+}
+
+.fa .fa-star {
+  font-size: 15px;
+}
+.smallStar {
+  color: #777;
+}
+.ratingBox_bar {
+  height: 15px !important;
+  width: 130px !important;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.ratingBox_percentage {
+  background-color: #3fd100;
+  word-wrap: inherit;
+  word-break: initial;
+  height: 15px;
+  font-size: 0;
+  cursor: pointer;
+}
+.ratingBox_count {
+  color: #737978 !important;
+  width: 15%;
+  padding-left: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-weight: 600;
+}
+.ratingBox_count::before {
+  content: "(";
+}
+.ratingBox_count::after {
+  content: ")";
+}
+.video {
+  max-width: 290px;
+  min-width: 285px;
+  min-height: 120px;
+  max-height: 110px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 0.2rem;
+  grid-row-gap: 0.2rem;
+}
+.videobox {
+  border: 1px solid #737978;
+  cursor: zoom-in;
+}
+.questions {
+  margin-left: 1.5rem;
+}
+.interaction {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 0 !important;
+}
+.questioncard {
+  margin: 0 0 0 15px;
+  font-size: 13px;
+  width: auto;
+  line-height: 30px;
+  padding: 3px 20px;
+  font-weight: 700;
+  box-shadow: 2px 3px 5px 0 #8888886b;
+  border: 2px solid #212721;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-family: Lato, sans-serif;
+}
+.questioncard:hover {
+  box-shadow: none;
+}
+.question {
+}
+
+
+#detailRating:hover .ratingBox {
+  opacity: 0.5;
+}
+.ratingBox:hover {
+  opacity: 1 !important;
+}
+
+
+@media only screen and (max-device-width: 767px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .bigContainer {
+    margin: 1rem;
+    padding: 2.5rem 2rem;
+  }
+  h3 {
+    margin: 0 0 2.2rem 0;
+    font-size: 20px;
+    width: unset;
+  }
+  .total {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: unset;
+  }
+  .totalRating-stars {
+    align-self: center;
+  }
+  .totalRating_info {
+    position: unset;
+  }
+  .totalRating-infobox {
+    margin-top: 0.9rem;
+  }
+  .interaction {
+    justify-content: center;
+  }
+  .questions {
+    margin-left: 0;
+  }
+  .questioncard {
+    width: 80%;
+    margin: 0 0 10px 0;
+  }
+  .video {
+    margin-bottom: 1.2rem;
+  }
+  #detailRating {
+    border-left: unset;
+    border-right: unset;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .bigContainer {
+    padding: 2.5rem 6rem;
+    margin: auto;
+  }
+  h3 {
+    margin: 0 0 2.2rem 0;
+    font-size: 20px;
+    width: unset;
+  }
+  .total {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .totalRating_info {
+    position: unset;
+  }
+  .totalRating-infobox {
+    margin-top: 0.5rem;
+  }
+  .interaction {
+    justify-content: center;
+  }
+  .questions {
+    margin-left: 0;
+  }
+  .questioncard {
+    margin: 0;
+  }
+  .coments {
+    margin-right: 5px;
+  }
+  .edit {
+    margin-left: 5px;
+  }
+  .video {
+    margin-bottom: 1.2rem;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1360px) {
+  html {
+    font-size: 1.3rem;
+  }
+  .bigContainer {
+    padding: 200px 90px;
+    margin: auto;
+  }
+  .container {
+    justify-content: center;
+  }
+  .total {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .totalRating_info {
+    position: unset;
+  }
+  .totalRating-infobox {
+    margin-top: 0.3rem;
+  }
+  .interaction {
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .questioncard {
+    margin: 0;
+  }
+  /* #detailRating{margin-right: 44px;} */
+  .coments {margin-right: 5px;}
+  .edit {margin-left: 5px;}
+}
+@media only screen and (min-device-width: 1900px) {
+  html {font-size: 1.5rem;}
+}
+
+/* Make ontouch with java! */
+
+/* modif: ipadUI: questions centered
+          ipadPro/1024px/ layoutchange
+          star change color  #ffab41!important --->#3fd100; 
+          percentage calculator more accurate*/
+/* extra: added the video shama */
